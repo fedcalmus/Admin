@@ -79,10 +79,6 @@ header{
     display: inline-block;
 }
 
-.logoSection img{
-    border-right: 1px solid #efefef;
-}
-
 .menuItems li{
     float: left;
 }
