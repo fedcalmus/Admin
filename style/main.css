@@ -72,7 +72,7 @@ body{
 
 header{
     width: 100%;
-    background-color: #efefef;
+    background-color: #0da2b1;
 }
 
 .logoSection{
@@ -93,7 +93,7 @@ header{
 
 .menuItems li a{
     display: block;
-    color: #21262c;
+    color: #ffffff;
     text-align: center;
     padding: 20px 25px;
     text-decoration: none;
@@ -115,7 +115,7 @@ header{
 
 .expandableItems{
     position: absolute;
-    background-color: #efefef;
+    background-color: #0da2b1;
     z-index: 1;
     display: none;
     -webkit-transition: 0.3s ease-out;
@@ -127,28 +127,39 @@ header{
     display: block;
 }
 
+/*Breadcrumb styles start from here*/
+
 .breadcrumbSection{
-    padding: 15px 0 0 45px;
+    padding: 25px;
     color: #21262c;
 }
 
 .breadcrumdHeading {
     font-size: 28px;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
+    color:#0da2b1;
 }
 
 .breadcrumbs li{
     display: inline;
+
 }
 
 .breadcrumbs li a{
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-decoration: none;
+}
 
+.breadcrumbLink{
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+}
+
+.breadcrumbs .breadcrumbLink:hover{
+    color:#0da2b1;
 }
 
 .breadcrumbs li a:after{
@@ -163,6 +174,54 @@ header{
     color: #1a1a1a;
 }
 
+/*Breadcrumb end here*/
 
+/*fieldset and legend styles start from here*/
+.tablefieldset{
+    border: 2px solid #0da2b1;
 
+}
+
+.tablefieldset legend{
+
+    text-align: center;
+    color: #0da2b1;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*fieldset and legend styles end here*/
+
+/*Table styles start from here*/
+
+.tableSection{
+    padding:25px;
+}
+
+.addButton{
+    display: inline-block;
+    padding: 13px 10px;
+    background: #0da2b1;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    float: right;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+.addButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*.addButton:focus{*/
+
+     /*box-shadow: 5px 10px 18px #888888;*/
+/*}*/
+
+/*Table styles end here*/
 
