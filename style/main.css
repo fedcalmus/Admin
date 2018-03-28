@@ -61,7 +61,7 @@ body{
     font-size: 100%;
     outline: none;
     margin:0;
-    background-color: #ffffff;
+    background-color: #e9eaef;
 }
 
 .container{
@@ -181,7 +181,7 @@ header{
     text-align: center;
     color: #0da2b1;
     padding: 0 30px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -194,14 +194,14 @@ header{
 }
 
 .addButton{
-    padding: 13px 10px;
+    padding: 20px 10px;
     background: #0da2b1;
     border: none;
     color: #ffffff;
     text-align: center;
     float: right;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     margin: 20px;
     font-family: 'Lato', sans-serif;
@@ -221,10 +221,57 @@ header{
 }
 
 .addButton:active{
-
     background-color: #0b636b;
     box-shadow: 3px 5px 13px #888888;
 }
+
+.tableContent{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #0da2b1;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tableContent th,td{
+    padding: 20px;
+}
+
+.tableContent th{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    background-color: #0da2b1;
+}
+.tableContent td{
+    border: 1px solid #0da2b1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row1{
+    width:25%;
+}
+
+.row2{
+    width:15%;
+}
+.row3{
+    width:20%;
+}
+.row4{
+    width:30%;
+}
+
+.row5{
+    width:10%;
+}
+
+.fa-edit:before{
+    content: "\#0da2b1";
+}
+
 
 
 /*Table styles end here*/
