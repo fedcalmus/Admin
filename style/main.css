@@ -86,6 +86,10 @@ header{
     display: inline-block;
 }
 
+.logoSection img{
+    max-height: 100px;
+}
+
 .menuItems li{
     float: left;
 }
@@ -268,11 +272,36 @@ header{
     width:10%;
 }
 
-.fa-edit:before{
-    content: "\#0da2b1";
+.fa-edit:before, .fa-trash:before   {
+
+    color: #0da2b1;
 }
 
 
-
 /*Table styles end here*/
+
+/*Pagination styles start here*/
+
+.paginationSection{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.paginationSection a{
+
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.paginationSection .active{
+
+    color: #0da2b1;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/*Pagination styles end here*/
 
