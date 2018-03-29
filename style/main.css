@@ -74,8 +74,9 @@ header{
     background-color: #0da2b1;
 }
 
-.logoSection{
+.logoSection, footer{
     background-color: #21262c;
+    color: #ffffff;
 }
 
 .logoSection a:hover{
@@ -177,6 +178,7 @@ header{
 /*fieldset and legend styles start from here*/
 .tablefieldset{
     border: 2px solid #0da2b1;
+    margin-bottom: 50px;
 
 }
 
@@ -198,7 +200,7 @@ header{
 }
 
 .addButton{
-    padding: 20px 10px;
+    padding: 19px 9px;
     background: #0da2b1;
     border: none;
     color: #ffffff;
@@ -235,6 +237,7 @@ header{
     border: 1px solid #0da2b1;
     width: 100%;
     table-layout: fixed;
+    text-align: left;
 }
 
 .tableContent th,td{
@@ -275,8 +278,12 @@ header{
 .fa-edit:before, .fa-trash:before   {
 
     color: #0da2b1;
+    cursor: pointer;
 }
 
+.fa-edit:hover, .fa-trash:hover{
+    opacity:0.6;
+}
 
 /*Table styles end here*/
 
@@ -305,3 +312,13 @@ header{
 
 /*Pagination styles end here*/
 
+footer{
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer .positiveText{
+    color:#ba3939;
+    font-style: italic;
+    padding-top: 20px;
+}
