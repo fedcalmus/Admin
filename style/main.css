@@ -307,7 +307,7 @@ header{
 
     color: #0da2b1;
     font-weight: 600;
-    font-size: 24px;
+
 }
 
 /*Pagination styles end here*/
@@ -321,4 +321,46 @@ footer .positiveText{
     color:#ba3939;
     font-style: italic;
     padding-top: 20px;
+}
+/*magnific pop-up styles starts here*/
+.white-popup{
+    position: relative;
+    background-color: #0da2b1;
+    color: #ffffff;
+    padding: 20px;
+    width: auto;
+    max-width: 50%;
+    margin: 20px auto;
+}
+/*magnific pop-up styles end here*/
+
+.popupButtons{
+    padding: 15px 45px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    color: #0da2b1;
+    font-size: 15px;
+    font-weight: 300;
+    cursor:pointer;
+}
+
+.popupButtons:hover {
+    opacity:0.6;
+}
+
+.cancelButton {
+    color: #ffffff;
+    background-color: #21262c;
+    margin-right: 15px;
+
+}
+.mfp-close {
+    color: #21262c !important;
+    font-size: 40px !important;
+}
+
+.popupHeading{
+    font-size: 20px;
+    padding-bottom: 30px;
 }
