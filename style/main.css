@@ -240,16 +240,18 @@ header{
 
 }
 
+.tableContent thead tr{
+    background-color: #0da2b1;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+
 .tableContent th,td{
     padding: 20px;
 }
 
-.tableContent th{
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 300;
-    background-color: #0da2b1;
-}
 .tableContent td{
     border: 1px solid #0da2b1;
     white-space: nowrap;
@@ -365,3 +367,67 @@ footer .positiveText{
     padding-bottom: 30px;
 }
 
+/*Responsive design starts here*/
+
+ @media only screen and (max-width: 1100px){
+
+
+     table thead {
+        display: none;
+     }
+
+     table tr {
+         border-bottom: 3px solid #0da2b1;
+         display: block;
+         margin-bottom: 25px;
+     }
+
+     .tableContent td {
+
+         display: block;
+         font-size: 16px;
+         text-align: right;
+     }
+
+     .tableContent td::before {
+         content: attr(data-label);
+         float: left;
+         font-weight: 600;
+     }
+
+     .tableContent td:last-child {
+         border-bottom: 0;
+     }
+
+     .tableContent{
+         border:none;
+     }
+
+     .tableContent td{
+         border-bottom: 1px solid #0da2b1!important;
+         border:none;
+
+     }
+
+}
+
+@media only screen and (max-width: 700px){
+    .tableContent td{
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .tableContent td {
+        display: flex;
+        flex-direction: column;
+    }
+    .tableContent td::before{
+        padding-bottom: 5px;
+    }
+    a{
+        display: block;
+    }
+}
+/*Responsive design ends here*/
