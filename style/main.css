@@ -283,6 +283,10 @@ header{
 
 }
 
+.fa-edit, .fa-trash{
+    margin-right: 15px;
+}
+
 .fa-edit:hover, .fa-trash:hover, .paginationSection a:hover{
     opacity:0.6;
 }
