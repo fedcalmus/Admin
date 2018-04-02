@@ -62,21 +62,27 @@
 <div class="container">
     <fieldset class="tablefieldset clearAfter">
         <legend>Add Entertainment Company</legend>
-        <button class="addButton transition">Add entertainment company</button>
-        <!--<div class="tableSection">-->
+        <div class="AddForm">
+            <form action="">
+                <label>Upload Image</label>
+                <input type="file" name="pic" accept="image/*">
+                <label>Entertainment Company Name</label>
+                <input type="text" name="companyName" maxlength="50">
+                <label>Foundation Date</label>
+                <input type="date" name="foundationDate">
+                <label>Revenue $</label>
+                <input type="number" name="revenue">
+                <label>Highest grossing film</label>
+                <select></select>
+
+            </form>
+        </div>
     </fieldset>
-</div>
-<div id="delete-popup" class="deletePopup mfp-hide">
-    <h4 class="popupHeading">Are you sure you want to delete?</h4>
-    <form action="">
-        <button id="hide" class="cancelButton popupButtons popup-modal-dismiss">Cancel</button>
-        <button class="confirmButton popupButtons">Confirm</button>
-    </form>
 </div>
 <footer>
     <div class="container">
         <p> &#169; X corporation 2018</p>
-        <p class="positiveText">Dearik, you need to smile here :)</p>
+        <!--<p class="positiveText">Dearik, you need to smile here :)</p>-->
     </div>
 </footer>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>

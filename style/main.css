@@ -433,6 +433,9 @@ footer .positiveText{
          border-right: 0;
          border-left: 0;
      }
+     .fa-edit, .fa-trash {
+         margin-bottom: 15px;
+     }
  }
      @media only screen and (max-width: 950px) {
 
@@ -467,10 +470,7 @@ footer .positiveText{
              float: none;
              /*font-size: 14px;*/
          }
-
-         .fa-edit, .fa-trash {
-             margin-bottom: 15px;
-         }
+         
 
          .tablefieldset legend {
              font-size: 18px;
