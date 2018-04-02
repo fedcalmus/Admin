@@ -64,11 +64,20 @@ body{
     margin:0;
     background-color: #e9eaef;
     color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+}
+
+
+html, body{
+    height: 100%;
 }
 
 .container{
     max-width: 85%;
     margin: 0 auto;
+    flex: 1 0 auto;
+
 }
 
 header{
@@ -113,7 +122,6 @@ header{
 .clearAfter{
     content: " ";
     clear: both;
-    display: table;
 }
 
 .expandableItems{
@@ -251,11 +259,14 @@ header{
     padding: 20px;
 }
 
-.tableContent td{
-    border: 1px solid #0da2b1;
+.tableContent td, .tableContent td::before{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.tableContent td {
+    border: 1px solid #0da2b1;
 }
 
 .row1{
@@ -318,10 +329,13 @@ header{
 
 /*Pagination styles end here*/
 
-footer{
+footer {
     padding: 50px 0;
     text-align: center;
+    flex-shrink: 0;
 }
+
+
 
 footer .positiveText{
     color:#ba3939;
@@ -329,7 +343,7 @@ footer .positiveText{
     padding-top: 20px;
 }
 /*magnific pop-up styles starts here*/
-.white-popup{
+.deletePopup{
     position: relative;
     background-color: #0da2b1;
     color: #ffffff;
@@ -342,13 +356,16 @@ footer .positiveText{
 
 .popupButtons{
     padding: 15px 45px;
-    background-color: #ffffff;
     border: none;
     outline: none;
-    color: #0da2b1;
     font-size: 15px;
     font-weight: 300;
     cursor:pointer;
+}
+
+ .confirmButton {
+    background-color: #ffffff;
+    color: #0da2b1;
 }
 
 .popupButtons:hover {
@@ -373,15 +390,14 @@ footer .positiveText{
 
 /*Responsive design starts here*/
 
- @media only screen and (max-width: 1100px){
+ @media only screen and (max-width: 1300px) {
 
-
-     table thead {
-        display: none;
+     .tableContent thead {
+         display: none;
      }
 
-     table tr {
-         border-bottom: 3px solid #0da2b1;
+     .tableContent tr {
+         border-bottom: 2px dotted #0da2b1;
          display: block;
          margin-bottom: 25px;
      }
@@ -391,96 +407,105 @@ footer .positiveText{
          display: block;
          font-size: 16px;
          text-align: right;
+         white-space: pre-wrap;
      }
 
      .tableContent td::before {
          content: attr(data-label);
          float: left;
          font-weight: 600;
+         max-width: 300px;
+         padding-right: 15px;
      }
 
      .tableContent td:last-child {
          border-bottom: 0;
      }
 
-     .tableContent{
-         border:none;
+     .tableContent {
+         border: none;
      }
 
-     .tableContent td{
-         border-bottom: 1px solid #0da2b1!important;
-         border:none;
+     .tableContent td {
+         border-bottom: 1px solid #0da2b1;
+         border-top: 0;
+         border-right: 0;
+         border-left: 0;
+     }
+ }
+     @media only screen and (max-width: 950px) {
 
+        .container{
+            font-size: 16px;
+            width: 100%;
+        }
+         .tableContent td {
+             display: flex;
+             flex-direction: column;
+             white-space: normal;
+         }
+
+         .tableContent td:before {
+             padding-bottom: 10px;
+             max-width: 100%;
+         }
+
+         .tableContent th, td {
+             padding: 10px;
+         }
+
+         .tablefieldset {
+             text-align: center;
+         }
+
+         .addButton {
+             float: none;
+             /*font-size: 14px;*/
+         }
+
+         .fa-edit, .fa-trash {
+             margin-bottom: 15px;
+         }
+
+         .tablefieldset legend {
+             font-size: 18px;
+             padding: 0 15px;
+         }
+
+         .paginationSection a {
+             font-size: 16px;
+         }
+
+         .tablefieldset {
+             padding: 5px;
+         }
+
+         .breadcrumdHeading {
+             font-size: 18px;
+         }
+
+
+         .expandableItems {
+             background-color: #1a1a1a;
+         }
+
+         .popupButtons{
+             width:120px;
+             padding: 15px 0;
+         }
+         .cancelButton {
+             margin-bottom: 5px;
+             margin-right: 0;
+         }
+
+         .deletePopup {
+             text-align: center;
+             padding: 5px;
+         }
+
+         .deletePopup .popupHeading{
+             padding-top:30px;
+         }
      }
 
-}
-
-
-@media only screen and (max-width: 700px) {
-    .tableContent td {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        white-space: normal;
-    }
-
-    .tableContent td:before {
-        padding-bottom: 10px;
-    }
-
-    .tableContent th, td{
-        padding: 10px;
-    }
-
-    .tablefieldset {
-        text-align: center;
-    }
-
-    .addButton {
-        float: none;
-        font-size: 14px;
-    }
-
-    .fa-edit, .fa-trash{
-        margin-bottom: 15px;
-        font-size: 15px;
-    }
-
-    .tablefieldset legend{
-        font-size: 18px;
-        padding: 0 15px;
-    }
-
-    .paginationSection a{
-        font-size: 15px;
-    }
-
-    .tablefieldset{
-        padding:5px;
-    }
-    .breadcrumdHeading{
-        font-size: 18px;
-    }
-
-    .breadcrumbs li, .breadcrumbs .breadcrumbLink{
-        font-size: 14px;
-    }
-
-    .expandableItems{
-        background-color: #1a1a1a;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .cancelButton{
-        margin-bottom: 5px;
-        margin-right: 0;
-    }
-
-    .white-popup{
-        text-align: center;
-    }
-}
 /*Responsive design ends here*/
