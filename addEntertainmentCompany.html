@@ -62,21 +62,89 @@
 <div class="container">
     <fieldset class="tablefieldset clearAfter">
         <legend>Add Entertainment Company</legend>
-        <div class="AddForm">
-            <form action="">
-                <label>Upload Image</label>
-                <input type="file" name="pic" accept="image/*">
-                <label>Entertainment Company Name</label>
-                <input type="text" name="companyName" maxlength="50">
-                <label>Foundation Date</label>
-                <input type="date" name="foundationDate">
-                <label>Revenue $</label>
-                <input type="number" name="revenue">
-                <label>Highest grossing film</label>
-                <select></select>
-
+            <form action="" class="addForm">
+                <div class="formRow">
+                <div class="formLeftContent">
+                    <label>Image Upload</label>
+                </div>
+                <div class="formRightContent ">
+                    <input type="file" name="pic" id="imageUpload" accept="image/*">
+                    <label for="imageUpload" class="imageUpload"><i class="far fa-images"></i></label>
+                </div>
+            </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="companyName">Entertainment Company Name</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input type="text" title="companyName" id="companyName" maxlength="50">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="foundationDate">Foundation Date</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input type="date" title="foundationDate" id="foundationDate">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="revenue">Revenue $</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input type="number" title="revenue" id="revenue">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="listOfFilms">Highest grossing film</label>
+                    </div>
+                    <div class="formRightContent">
+                        <select title="listOfFilms" id="listOfFilms">
+                            <option value="HarryPotter" selected="selected">Harry Potter and the Deathly Hallows – Part 2</option>
+                            <option value="darkKnight" >The Dark Knight Rises</option>
+                            <option value="theHobbit">The Hobbit: An Unexpected Journey</option>
+                            <option value="inception">Inception</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="emailAddress">Email address</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input type="email" title="email" id="emailAddress">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input type="number" title="phoneNumber" id="phoneNumber">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label>Entertainment type</label>
+                    </div>
+                    <div class="formRightContent">
+                        <input id="movie" type="radio" name="movie" value="M">
+                        <label for="movie">Movie</label>
+                        <input id="cartoon" type="radio" name="movie" value="C">
+                        <label for="cartoon">Cartoon</label>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formLeftContent">
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="formRightContent">
+                          <textarea placeholder="Add general information..." rows="4" cols="50" title="generalInfo" id="description"></textarea>
+                    </div>
+                </div>
             </form>
-        </div>
     </fieldset>
 </div>
 <footer>

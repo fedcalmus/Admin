@@ -470,7 +470,7 @@ footer .positiveText{
              float: none;
              /*font-size: 14px;*/
          }
-         
+
 
          .tablefieldset legend {
              font-size: 18px;
@@ -514,3 +514,75 @@ footer .positiveText{
      }
 
 /*Responsive design ends here*/
+
+/*Styles for addEntertainmentCompany start here*/
+
+
+
+.addForm input[type=text],input[type=number], input[type=email], textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #0da2b1;
+}
+
+.addForm label{
+    font-size: 19px;
+}
+
+.formRow{
+    display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.formLeftContent{
+
+    width: 20%;
+    padding-right: 15px;
+    text-align: right;
+
+}
+
+.formRightContent{
+
+    width: 40%;
+}
+
+.addForm label::after{
+    content: ":";
+}
+
+#description{
+    min-height: 200px;
+    resize: vertical;
+}
+
+#description::placeholder{
+    font-size: 16px;
+}
+
+.addForm input[type=file]{
+    display: none;
+}
+
+.imageUpload {
+    border: 1px solid #0da2b1;
+    padding: 30px 60px;
+    cursor: pointer;
+    color: #0da2b1;
+    font-size: 22px;
+}
+
+.addForm .imageUpload::after{
+    content: '';
+}
+
+.fa-images {
+font-size: 30px;
+}
+
+/*Styles for addEntertainmentCompany end here*/
