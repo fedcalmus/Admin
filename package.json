@@ -24,5 +24,7 @@
     "jquery": "^3.3.1",
     "js": "^0.1.0",
     "magnific-popup": "^1.1.0",
-    "primer-tooltips": "^1.5.3" }
+    "primer-tooltips": "^1.5.3",
+    "select2": "^4.0.6-rc.1"
+  }
 }

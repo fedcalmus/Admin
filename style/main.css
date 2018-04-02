@@ -520,7 +520,7 @@ footer .positiveText{
 
 
 .addForm input[type=text],input[type=number], input[type=email], textarea{
-    width: 50%;
+    width: 70%;
     padding: 12px;
     border: 1px solid #0da2b1;
 }
