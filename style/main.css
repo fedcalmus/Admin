@@ -79,17 +79,17 @@ header{
     background-color: #0da2b1;
 }
 
-.logoSection, footer{
+.logo, footer{
     background-color: #21262c;
     color: #ffffff;
 }
 
-.logoSection a:hover{
+.logo a:hover{
     opacity: 0.6;
 }
 
 
-.logoSection img{
+.logo img{
     max-height: 100px;
 }
 
