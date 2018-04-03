@@ -83,7 +83,7 @@ header {
     background-color: #0da2b1;
 }
 
-.logo, footer {
+.bgHeaderFooter {
     background-color: #21262c;
     color: #ffffff;
 }
@@ -212,7 +212,7 @@ header {
     padding: 19px 9px;
 }
 
-.transition{
+.transition {
     -webkit-transition: 0.2s ease-out;
     -moz-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
@@ -374,7 +374,7 @@ footer {
 
 /*Responsive design starts here*/
 
- @media only screen and (max-width: 1300px) {
+ @media only screen and (max-width: 1100px) {
 
      .tableContent thead {
          display: none;
@@ -420,7 +420,7 @@ footer {
          margin-bottom: 15px;
      }
  }
-     @media only screen and (max-width: 950px) {
+     @media only screen and (max-width: 850px) {
 
         .container{
             font-size: 16px;
