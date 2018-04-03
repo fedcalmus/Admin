@@ -411,11 +411,10 @@ footer {
      }
 
      .tableContent td {
+         border: none;
          border-bottom: 1px solid #0da2b1;
-         border-top: 0;
-         border-right: 0;
-         border-left: 0;
      }
+     
      .fa-edit, .fa-trash {
          margin-bottom: 15px;
      }
@@ -451,7 +450,6 @@ footer {
 
          .addButton {
              float: none;
-             /*font-size: 14px;*/
          }
 
 
