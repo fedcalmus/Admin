@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add Entertainment Company</title>
-    <link rel="stylesheet" href="style/main.css">
-    <!--End Theme CSS-->
+
     <!--Start Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <!--End Google font-->
@@ -27,6 +26,14 @@
     <!--Animate css starts here-->
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <!--Animate css ends here-->
+
+    <!--Select2 styles start from here-->
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+
+    <!--datePicker styles start here-->
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+    <!--Main styles start here -->
+    <link rel="stylesheet" href="style/main.css">
 
 </head>
 <body>
@@ -82,10 +89,10 @@
                 </div>
                 <div class="formRow">
                     <div class="formLeftContent">
-                        <label for="foundationDate">Foundation Date</label>
+                        <label for="datetimepicker1">Foundation Date</label>
                     </div>
                     <div class="formRightContent">
-                        <input type="date" title="foundationDate" id="foundationDate">
+                        <input type="text" title="foundationDate" id="datetimepicker1">
                     </div>
                 </div>
                 <div class="formRow">
@@ -101,8 +108,9 @@
                         <label for="listOfFilms">Highest grossing film</label>
                     </div>
                     <div class="formRightContent">
-                        <select title="listOfFilms" id="listOfFilms">
-                            <option value="HarryPotter" selected="selected">Harry Potter and the Deathly Hallows – Part 2</option>
+                        <select title="listOfFilms" id="listOfFilms" data-placeholder="Select a movie">
+                            <option></option>
+                            <option value="HarryPotter">Harry Potter and the Deathly Hallows – Part 2</option>
                             <option value="darkKnight" >The Dark Knight Rises</option>
                             <option value="theHobbit">The Hobbit: An Unexpected Journey</option>
                             <option value="inception">Inception</option>
@@ -130,7 +138,7 @@
                         <label>Entertainment type</label>
                     </div>
                     <div class="formRightContent">
-                        <input id="movie" type="radio" name="movie" value="M">
+                        <input id="movie" type="radio" name="movie" value="M" checked="checked">
                         <label for="movie">Movie</label>
                         <input id="cartoon" type="radio" name="movie" value="C">
                         <label for="cartoon">Cartoon</label>
@@ -156,6 +164,9 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="js/magnific.js"></script>
+<script src="node_modules/select2/dist/js/select2.min.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script></script>
 <script>
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
@@ -163,7 +174,30 @@
     });
 </script>
 <script>
-    $(document).ready(function() { $("#listOfFilms").select2(); });
+    $(document).ready(function() {
+        $("#listOfFilms").select2({
+
+        });
+    });
 </script>
+<script>jQuery.datetimepicker.setLocale('de');
+
+jQuery('#datetimepicker1').datetimepicker({
+    i18n:{
+        de:{
+            months:[
+                'Januar','Februar','März','April',
+                'Mai','Juni','Juli','August',
+                'September','Oktober','November','Dezember',
+            ],
+            dayOfWeek:[
+                "So.", "Mo", "Di", "Mi",
+                "Do", "Fr", "Sa.",
+            ]
+        }
+    },
+    timepicker:false,
+    format:'d.m.Y'
+});</script>
 </body>
 </html>
