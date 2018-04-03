@@ -57,7 +57,7 @@ a{
 /*Reset CSS ends here*/
 
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     font-size: 100%;
     background-color: #e9eaef;
@@ -65,29 +65,27 @@ body{
     padding-bottom:150px;
     position: relative;
     min-height: 100vh;
-
 }
-.container{
+
+.container {
     max-width: 85%;
     margin: 0 auto;
-
 }
 
-header{
+header {
     background-color: #0da2b1;
 }
 
-.logo, footer{
+.logo, footer {
     background-color: #21262c;
     color: #ffffff;
 }
 
-.logo a:hover{
+.logo a:hover {
     opacity: 0.6;
 }
 
-
-.logo img{
+.logo img {
     max-height: 100px;
 }
 
@@ -95,7 +93,7 @@ header{
     float: left;
 }
 
-.menuItems li a{
+.menuItems li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -104,21 +102,20 @@ header{
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
     -o-transition:  0.3s ease-out;
-
 }
 
-.menuItems li a:hover{
+.menuItems li a:hover {
     background-color: #21262c;
     color: #efefef;
 }
 
-.clearAfter::after{
+.clearAfter::after {
     content: " ";
     clear: both;
     display: table;
 }
 
-.expandableItems{
+.dropdownItems{
     position: absolute;
     background-color: #0da2b1;
     z-index: 1;
@@ -128,22 +125,18 @@ header{
     -o-transition:  0.3s ease-out;
 }
 
-.expandable:hover .expandableItems{
+.dropdown:hover .dropdownItems{
     display: block;
 }
 
 /*Breadcrumb styles start from here*/
 
-.breadcrumbSection{
-    padding: 25px;
-    color: #21262c;
-}
-
-.breadcrumdHeading {
+.pageTitle {
     font-size: 28px;
     display: inline-block;
     font-weight: 600;
     color:#0da2b1;
+    padding-top: 25px;
 }
 
 .breadcrumbs li{
@@ -155,9 +148,10 @@ header{
     font-size: 18px;
     font-weight: 300;
     text-decoration: none;
+    color: #1a1a1a;
 }
 
-.breadcrumbs .breadcrumbLink:hover{
+.breadcrumbs li a:hover{
     color:#0da2b1;
 }
 
@@ -169,11 +163,8 @@ header{
     padding: 15px 0;
 }
 
-.breadcrumbs .breadcrumbLink{
-    color: #1a1a1a;
-}
 
-/*Breadcrumb end here*/
+/* Breadcrumb end here */
 
 /*fieldset and legend styles start from here*/
 .tablefieldset{

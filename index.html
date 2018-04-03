@@ -1,40 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adminicus</title>
 
+    <!-- Start Google fonts-->
 
-    <!--Start Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
-    <!--End Google font-->
-    <!--Favicon starts here-->
+
+    <!-- End Google font -->
+
+    <!-- Favicon starts here -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <!--Favicon ends here-->
-    <!--Font awesome starts here-->
+    <!-- Favicon ends here -->
+
+    <!-- Font awesome starts here -->
     <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css"  type="text/css"/>
     <!--Font awesome ends here-->
 
-    <!--Magnific pop up start-->
+    <!-- Magnific pop up starts here -->
 
     <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css" type="text/css"/>
-    <!--Magnific pop up end-->
 
-    <!--Animate css starts here-->
+    <!-- Magnific pop up end -->
+
+    <!-- Animate css starts here -->
+
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <!--Animate css ends here-->
 
-    <!--Select2 styles start from here-->
+    <!-- Animate css ends here -->
+
+    <!-- Select2 styles start from here -->
+
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
 
-    <!--datePicker styles start here-->
+    <!-- Select2 styles end here -->
+
+    <!-- datePicker styles start here -->
+
     <link rel="stylesheet" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
-    <!--Main styles start here -->
+
+    <!-- Main styles start here -->
+
     <link rel="stylesheet" href="style/main.css">
+
+    <!-- Main styles end here -->
 
 </head>
 <body>
@@ -44,31 +59,30 @@
     </div>
     <div class="container">
         <ul class="menuItems clearAfter">
-            <li class="expandable"><a href="#">Films</a>
-                <div class="expandableItems">
+            <li class="dropdown"><a href="#">Films</a>
+                <ul class="dropdownItems">
                     <a href="#">List of films</a>
                     <a href="#">Add a film</a>
-                </div>
+                </ul>
             </li>
-            <li class="expandable"><a href="#">Actors</a>
-                <div class="expandableItems">
+            <li class="dropdown"><a href="#">Actors</a>
+                <ul class="dropdownItems">
                     <a href="#">List of actors</a>
                     <a href="#">Add an actor</a>
-                </div>
+                </ul>
             </li>
             <li><a href="#">About Hollywood</a></li>
         </ul>
     </div>
 </header>
-<div class="breadcrumbSection">
-    <h4 class="breadcrumdHeading">List of entertainment companies</h4>
-    <ul class="breadcrumbs">
-        <li><a href="index.html" class="breadcrumbLink transition">Home</a></li>
+<section class="mainContent">
+    <div class="container ">
+        <h2 class="pageTitle">List of entertainment companies</h2>
+        <ul class="breadcrumbs">
+        <li><a href="index.html" class="transition">Home</a></li>
         <li>List of Entertainment Companies</li>
-    </ul>
-</div>
-<div class="container">
-    <fieldset class="tablefieldset clearAfter">
+        </ul>
+        <fieldset class="tablefieldset clearAfter">
         <legend>Entertainment companies</legend>
         <a href="addEntertainmentCompany.html">
             <button class="addButton transition" value="Open add entertainment page">Add Entertainment Company</button>
@@ -172,10 +186,10 @@
         <button class="confirmButton popupButtons">Confirm</button>
     </form>
 </div>
+</section>
 <footer>
     <div class="container">
         <p> &#169; X corporation 2018</p>
-        <p class="positiveText">Dearik, you need to smile here :)</p>
     </div>
 </footer>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
