@@ -20,7 +20,9 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -28,34 +30,37 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-a{
+a {
     display: inline-block;
     outline: none;
+    text-decoration: none;
 }
-
 
 * {
     box-sizing: border-box;
 }
 
 /*Reset CSS ends here*/
-
 
 body {
     font-family: 'Lato', sans-serif;
@@ -115,7 +120,7 @@ header {
     display: table;
 }
 
-.dropdownItems{
+.dropdownItems {
     position: absolute;
     background-color: #0da2b1;
     z-index: 1;
@@ -125,7 +130,7 @@ header {
     -o-transition:  0.3s ease-out;
 }
 
-.dropdown:hover .dropdownItems{
+.dropdown:hover .dropdownItems {
     display: block;
 }
 
@@ -135,39 +140,37 @@ header {
     font-size: 28px;
     display: inline-block;
     font-weight: 600;
-    color:#0da2b1;
+    color: #0da2b1;
     padding-top: 25px;
 }
 
-.breadcrumbs li{
+.breadcrumbs li {
     display: inline;
-
 }
 
-.breadcrumbs li a{
+.breadcrumbs li a {
     font-size: 18px;
     font-weight: 300;
-    text-decoration: none;
     color: #1a1a1a;
 }
 
-.breadcrumbs li a:hover{
+.breadcrumbs li a:hover {
     color:#0da2b1;
 }
 
-.breadcrumbs li a:after{
+.breadcrumbs li a:after {
     content: "/";
 }
 
-.breadcrumbs{
+.breadcrumbs {
     padding: 15px 0;
 }
-
 
 /* Breadcrumb end here */
 
 /*fieldset and legend styles start from here*/
-.tablefieldset{
+
+.tablefieldset {
     border: 2px solid #0da2b1;
     margin-bottom: 50px;
     padding: 25px;
