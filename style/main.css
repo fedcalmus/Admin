@@ -355,13 +355,14 @@ footer {
 /*magnific pop-up styles starts here*/
 .popup{
     position: relative;
-    background-color: #0da2b1;
     color: #ffffff;
     padding: 20px;
-    width: auto;
-    max-width: 50%;
+    max-width: 500px;
+    width:40%;
     margin: 20px auto;
+    background-color: #0da2b1;
 }
+
 /*magnific pop-up styles end here*/
 
 
@@ -487,7 +488,6 @@ footer {
          .breadcrumdHeading {
              font-size: 18px;
          }
-
 
          .expandableItems {
              background-color: #1a1a1a;
