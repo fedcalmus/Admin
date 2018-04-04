@@ -307,8 +307,13 @@ header {
     cursor: pointer;
 }
 
-.fa-edit, .fa-trash {
+.toolIcons li {
     margin-right: 15px;
+    display: inline-block;
+}
+
+.toolIcons li:last-child {
+    margin-right: 0;
 }
 
 .fa-edit:hover, .fa-trash:hover, .pagination li a:hover {
@@ -523,6 +528,15 @@ footer {
 
     .fa-edit, .fa-trash {
         margin-top: 15px;
+    }
+
+    .tableContent .toolIcons {
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: row;
     }
 }
 
