@@ -360,6 +360,11 @@ footer {
     color: #ffffff;
     background-color: #21262c;
     margin-right: 15px;
+    opacity: 0.6;
+}
+
+.cancelButton:hover{
+    opacity: 1;
 }
 
 .mfp-close {
