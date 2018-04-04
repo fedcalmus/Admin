@@ -127,6 +127,10 @@ header {
     color: #efefef;
 }
 
+.menuIcon{
+    display: none;
+}
+
 .clearAfter::after {
     content: " ";
     clear: both;
@@ -413,6 +417,8 @@ footer {
          display: block;
          font-size: 16px;
          text-align: right;
+         border: none;
+         border-bottom: 1px solid #0da2b1;
      }
 
      .tableContent td::before {
@@ -431,21 +437,33 @@ footer {
          border: none;
      }
 
-     .tableContent td {
-         border: none;
-         border-bottom: 1px solid #0da2b1;
-     }
-
-     .fa-edit, .fa-trash {
-         margin-bottom: 15px;
-     }
  }
      @media only screen and (max-width: 850px) {
 
-        .container{
 
-            width: 100%;
-        }
+
+         .menuItems{
+             display: none;
+         }
+
+         .menuIcon{
+             display: block;
+             color:#lalala;
+             font-size: 26px;
+             z-index: 1;
+             position: absolute;
+             padding: 15px 0;
+         }
+
+         .pageTitle {
+             padding-top: 50px;
+         }
+
+         .pageTitle:hover{
+             opacity: 0.8;
+         }
+
+
          .tableContent td {
              display: -webkit-box;
              display: -moz-box;
@@ -472,6 +490,7 @@ footer {
          .addButton {
              float: none;
          }
+
 
 
          .tablefieldset legend {
