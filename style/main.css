@@ -60,6 +60,17 @@ a {
     box-sizing: border-box;
 }
 
+
+h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+h3{
+    font-size: 20px;
+}
+
 /*Reset CSS ends here*/
 
 body {
@@ -124,7 +135,7 @@ header {
 
 .dropdownItems {
     position: absolute;
-    background-color: #0da2b1;
+    background-color: #065a62;
     z-index: 1;
     display: none;
     -webkit-transition: 0.3s ease-out;
@@ -139,11 +150,9 @@ header {
 /*Breadcrumb styles start from here*/
 
 .pageTitle {
-    font-size: 28px;
-    display: inline-block;
-    font-weight: 600;
-    color: #0da2b1;
+
     padding-top: 25px;
+    color: #0da2b1;
 }
 
 .breadcrumbs li {
@@ -324,6 +333,11 @@ header {
     font-weight: 600;
 }
 
+.pagination .disable{
+    color: #a09998ad;
+    cursor: default;
+}
+
 /*Pagination styles end here*/
 
 footer {
@@ -339,7 +353,7 @@ footer {
 
 
 /*magnific pop-up styles starts here*/
-.deletePopup{
+.popup{
     position: relative;
     background-color: #0da2b1;
     color: #ffffff;
@@ -372,8 +386,7 @@ footer {
     font-size: 40px !important;
 }
 
-.popupHeading{
-    font-size: 20px;
+.popupHeading {
     padding-bottom: 30px;
 }
 
