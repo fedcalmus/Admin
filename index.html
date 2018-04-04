@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,75 +8,59 @@
     <title>Adminicus</title>
 
     <!-- Start Google fonts-->
-
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
-
-    <!-- End Google font -->
 
     <!-- Favicon starts here -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Favicon ends here -->
 
     <!-- Font awesome starts here -->
-
     <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css"  type="text/css"/>
 
-    <!--Font awesome ends here-->
-
     <!-- Magnific pop up starts here -->
-
     <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css" type="text/css"/>
 
-    <!-- Magnific pop up end -->
-
     <!-- Animate css starts here -->
-
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
-    <!-- Animate css ends here -->
-
     <!-- Select2 styles start from here -->
-
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
 
-    <!-- Select2 styles end here -->
-
     <!-- datePicker styles start here -->
-
     <link rel="stylesheet" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
 
     <!-- Main styles start here -->
-
     <link rel="stylesheet" href="style/main.css">
-
-    <!-- Main styles end here -->
-
 </head>
 <body>
+<!--Header section starts here-->
 <header>
     <div class="logo bgHeaderFooter">
-            <a href="index.html"><img src="img/fedcalmus.png" alt="logo"/></a>
+        <a href="index.html"><img src="img/fedcalmus.png" alt="logo"/></a>
+    </div>
+    <div class="respMenu">
+        <a class="menuIcon" onclick="navBarFunction()"><i class="fas fa-bars"></i></a>
     </div>
     <div class="container">
-        <a class="menuIcon"><i class="fas fa-bars"></i></a>
         <ul class="menuItems clearAfter">
-            <li class="dropdown"><a href="#">Films</a>
+            <li class="dropdown floatedItem"><a href="#">Films</a>
                 <ul class="dropdownItems">
-                    <a href="#">List of films</a>
-                    <a href="#">Add a film</a>
+                    <li><a href="#">List of films</a></li>
+                    <li><a class="" href="#">Add a film</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="#">Actors</a>
+            <li class="dropdown floatedItem clearAfter"><a href="#">Actors</a>
                 <ul class="dropdownItems">
-                    <a href="#">List of actors</a>
-                    <a href="#">Add an actor</a>
+                    <li><a href="#">List of actors</a></li>
+                    <li><a href="#">Add an actor</a></li>
                 </ul>
             </li>
-            <li><a href="#">About Hollywood</a></li>
+            <li class="floatedItem"><a href="#">About Hollywood</a></li>
         </ul>
     </div>
 </header>
+<!--Header section ends here-->
+<!--Main content starts here-->
 <section class="mainContent">
     <div class="container ">
         <h1 class="pageTitle">List of entertainment companies</h1>
@@ -85,6 +68,7 @@
             <li><a href="index.html" class="transition">Home</a></li>
             <li>List of Entertainment Companies</li>
         </ul>
+        <!--Table content starts here-->
         <fieldset class="tablefieldset clearAfter">
             <legend>Entertainment companies</legend>
             <div class="button">
@@ -216,20 +200,27 @@
                 </ul>
             </div>
         </fieldset>
+        <!--Table content ends here-->
     </div>
 </section>
+<!--Main content ends here-->
+<!--Footer starts here-->
 <footer class="bgHeaderFooter">
     <div class="container">
         <p class="copyright"> &#169; X corporation 2018</p>
     </div>
 </footer>
+<!--Footer ends here-->
+<!--Popup content starts here-->
 <div id="popup" class="popup mfp-hide">
     <h3 class="popupHeading">Are you sure you want to delete?</h3>
     <form action="">
-        <button id="hide" class="cancelButton btn popupButtons transition">Cancel</button>
-        <button class="confirmButton btn transition">Confirm</button>
+        <button id="hide" class="cancelButton btn popupButtons transition btnMd">Cancel</button>
+        <button class="confirmButton btn transition btnMd">Confirm</button>
     </form>
 </div>
+<!--Popup content ends here-->
+<!--Scripts start here-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="node_modules/select2/dist/js/select2.min.js"></script>
@@ -247,5 +238,11 @@
         });
     });
 </script>
+<script>
+    function navBarFunction() {
+        document.getElementsByClassName("menuItems")[0].classList.toggle("showMenuItems");
+    }
+</script>
+<!--Script ends here-->
 </body>
 </html>
