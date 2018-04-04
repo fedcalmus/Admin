@@ -391,6 +391,10 @@ footer {
     padding-bottom: 30px;
 }
 
+.copyright{
+    padding-top: 15px;
+}
+
 /*Responsive design starts here*/
 
  @media only screen and (max-width: 1100px) {
