@@ -392,7 +392,7 @@ footer {
 }
 
 .copyright{
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 /*Responsive design starts here*/
@@ -410,11 +410,9 @@ footer {
      }
 
      .tableContent td {
-
          display: block;
          font-size: 16px;
          text-align: right;
-         white-space: pre-wrap;
      }
 
      .tableContent td::before {
