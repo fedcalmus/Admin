@@ -1,35 +1,8 @@
 
 
-.formRow{
-    display:flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    justify-content: center;
-    padding: 30px;
-}
-
-.formLeftContent{
-
-    width: 20%;
-    padding-right: 15px;
-    text-align: right;
-
-}
-
-.formRightContent{
-
-    width: 40%;
-}
-
-.addForm label::after{
-    content: ":";
-}
-
 #description{
     min-height: 200px;
-    resize: vertical;
+
 }
 
 #description::placeholder{
@@ -38,6 +11,10 @@
 
 .addForm input[type=file]{
     display: none;
+}
+
+textarea {
+
 }
 
 .imageUpload {

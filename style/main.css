@@ -403,7 +403,61 @@ footer {
     line-height: 70px;
 }
 
-/*Responsive design starts here*/
+/* Add company page styles start from here */
+
+.formContent {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.genInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0da2b1;
+    outline:none;
+    font-size: 16px;
+}
+
+.genInput:focus {
+    border: 1px solid #1a1a1a;
+}
+
+.formRow {
+    display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.formLeftContent {
+    width: 40%;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.formRightContent {
+    width: 60%;
+}
+
+.addForm label::after {
+    content: ":";
+}
+
+textarea {
+    resize: vertical;
+}
+
+.txtareaMd {
+    min-height: 200px;
+}
+
+/* Add company page styles end here */
+
+/* Responsive design starts here */
 
 @media only screen and (min-width: 850px) {
 
@@ -453,49 +507,6 @@ footer {
     }
 }
 
-/* Add company page styles start from here */
-
-.formContent {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.genInput {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #0da2b1;
-    outline:none;
-    font-size: 16px;
-}
-
-.genInput:focus {
-    border: 1px solid #1a1a1a;
-}
-
-.formRow {
-    display:flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    justify-content: center;
-    padding: 30px;
-}
-
-.formLeftContent {
-    width: 20%;
-    padding-right: 15px;
-    text-align: right;
-}
-
-.formRightContent {
-    width: 40%;
-}
-
-/* Add company page styles end here */
-
-/* Responsive styles start here */
 @media only screen and (max-width: 850px) {
 
     .menuIcon {
