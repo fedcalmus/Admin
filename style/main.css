@@ -453,6 +453,15 @@ footer {
     }
 }
 
+/* Add company page styles start from here */
+
+.formContent {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add company page styles end here */
 @media only screen and (max-width: 850px) {
 
     .menuIcon {
@@ -473,7 +482,7 @@ footer {
     .showMenuItems {
         display: block;
     }
-    
+
     .floatedItem {
         float: none;
     }
