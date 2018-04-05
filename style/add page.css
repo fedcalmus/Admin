@@ -1,38 +1,4 @@
 
-
-#description{
-    min-height: 200px;
-
-}
-
-#description::placeholder{
-    font-size: 16px;
-}
-
-.addForm input[type=file]{
-    display: none;
-}
-
-textarea {
-
-}
-
-.imageUpload {
-    border: 1px solid #0da2b1;
-    padding: 30px 60px;
-    cursor: pointer;
-    color: #0da2b1;
-    font-size: 22px;
-}
-
-.addForm .imageUpload::after{
-    content: '';
-}
-
-.fa-images {
-    font-size: 30px;
-}
-
 /*select2 styles start here*/
 .select2-container--default .select2-selection--single{
     border: 1px solid #0da2b1;
