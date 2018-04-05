@@ -39,9 +39,10 @@
         <a href="index.html"><img src="img/fedcalmus.png" alt="logo"/></a>
     </div>
     <div class="respMenu">
-        <a class="menuIcon" onclick="navBarFunction()"><i class="fas fa-bars"></i></a>
+
     </div>
     <div class="container">
+        <a class="menuIcon menuToggle"><i class="fas fa-bars"></i></a>
         <ul class="menuItems clearAfter">
             <li class="dropdown floatedItem"><a href="#">Films</a>
                 <ul class="dropdownItems">
@@ -49,7 +50,7 @@
                     <li><a class="" href="#">Add a film</a></li>
                 </ul>
             </li>
-            <li class="dropdown floatedItem clearAfter"><a href="#">Actors</a>
+            <li class="dropdown floatedItem"><a href="#">Actors</a>
                 <ul class="dropdownItems">
                     <li><a href="#">List of actors</a></li>
                     <li><a href="#">Add an actor</a></li>
@@ -195,25 +196,8 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="node_modules/select2/dist/js/select2.min.js"></script>
-<script src="js/magnific.js"></script>
-<script>
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-        e.preventDefault();
-        $.magnificPopup.close();
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $("#listOfFilms").select2({
+<script src="js/main.js"></script>
 
-        });
-    });
-</script>
-<script>
-    function navBarFunction() {
-        document.getElementsByClassName("menuItems")[0].classList.toggle("showMenuItems");
-    }
-</script>
 <!--Script ends here-->
 </body>
 </html>

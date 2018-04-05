@@ -1,21 +1,46 @@
-        //
-        //
-        // $(function() {
-        //
-        //     var AppPlugins = {
-        //
-        //         /* ------ Select2 plugin ------ */
-        //         navBarFunction  function  () {
-        //             document.getElementsByClassName("menuItems")[0].classList.toggle("showMenuItems");
-        //         }
-        //     };
-        //
-        //     /* ------ Plugins Init ------ */
-        //     AppPlugins.navBarFunction();
-        //     AppPlugins.AccordionMenu();
-        //     // AppPlugins.mCustomScroll();
-        //
-        // });
-        // // function navBarFunction() {
-        // //     document.getElementsByClassName("menuItems")[0].classList.toggle("showMenuItems");
-        // // }
+$(function() {
+
+    var AppPlugins = {
+
+        /* Navigation Toggle */
+        navBarFunction: function () {
+
+            var toggle = $(".menuToggle"),
+                menuItems = $(".menuItems"),
+                className = "showMenuItems";
+
+            toggle.on("click", function () {
+                menuItems.toggleClass(className);
+            });
+
+        },
+
+        /* Select2 Plugin */
+        select2: function () {
+            $(".select2").select2();
+        },
+
+        /* Magnific Popup Plugin */
+        maginficPopup: function () {
+
+            // Init popup on click
+            $('.open-popup-link').magnificPopup({
+                type:'inline',
+                midClick: true
+            });
+
+            // Close Popup event handler
+            $(document).on('click', '.popup-modal-dismiss', function (e) {
+                e.preventDefault();
+                $.magnificPopup.close();
+            });
+
+        }
+    };
+
+    /* ------ Plugins Init ------ */
+    AppPlugins.navBarFunction();
+    AppPlugins.maginficPopup();
+    AppPlugins.select2();
+
+});
