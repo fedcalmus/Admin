@@ -409,6 +409,7 @@ footer {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
 }
 
 .genInput {
@@ -433,13 +434,13 @@ footer {
     padding: 30px;
 }
 
-.formLeftContent {
+.formLeft {
     width: 40%;
     padding-right: 15px;
     text-align: right;
 }
 
-.formRightContent {
+.formRight {
     width: 60%;
 }
 

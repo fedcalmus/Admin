@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65cd464d-7e0b-48e2-8ddf-b4c947c983c1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/addCompany.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/addCompany.html" afterPath="$PROJECT_DIR$/addCompany.html" />
+      <change beforePath="$PROJECT_DIR$/style/main.css" afterPath="$PROJECT_DIR$/style/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1212">
+            <state relative-caret-position="-489">
               <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="28" />
               <folding />
             </state>
@@ -36,8 +37,8 @@
       <file leaf-file-name="addCompany.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addCompany.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="152" column="160" lean-forward="false" selection-start-line="152" selection-start-column="160" selection-end-line="152" selection-end-column="160" />
+            <state relative-caret-position="197">
+              <caret line="75" column="51" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -46,8 +47,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="513" column="23" lean-forward="false" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
+            <state relative-caret-position="467">
+              <caret line="442" column="10" lean-forward="false" selection-start-line="442" selection-start-column="10" selection-end-line="442" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -76,8 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.white-popup</find>
-      <find>.a</find>
       <find>#lalala</find>
       <find>test-popup</find>
       <find>.container</find>
@@ -104,6 +103,10 @@
       <find>pagination</find>
       <find>outline</find>
       <find>input</find>
+      <find>&lt;div class=&quot;formRow&quot;&gt;</find>
+      <find>formContent</find>
+      <find>formRightContent</find>
+      <find>formLeft</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +125,8 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$USER_HOME$/Downloads/CustomFileInputs/CustomFileInputs/index.html" />
         <option value="$PROJECT_DIR$/style/add page.css" />
-        <option value="$PROJECT_DIR$/style/main.css" />
         <option value="$PROJECT_DIR$/AddCompany.html" />
+        <option value="$PROJECT_DIR$/style/main.css" />
         <option value="$PROJECT_DIR$/addCompany.html" />
       </list>
     </option>
@@ -164,7 +167,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YEBO-2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/STDev031/Documents/GitHub/Admin/js/magnific.js" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -282,12 +285,12 @@
       <workItem from="1522821373202" duration="23353000" />
       <workItem from="1522852720732" duration="1432000" />
       <workItem from="1522912808422" duration="10580000" />
-      <workItem from="1522952009975" duration="288000" />
+      <workItem from="1522952009975" duration="2030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150457000" />
+    <option name="totallyTimeSpent" value="152199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
@@ -551,15 +554,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="513" column="23" lean-forward="false" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
+        <state relative-caret-position="467">
+          <caret line="442" column="10" lean-forward="false" selection-start-line="442" selection-start-column="10" selection-end-line="442" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1212">
+        <state relative-caret-position="-489">
           <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="28" />
           <folding />
         </state>
@@ -567,8 +570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addCompany.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="152" column="160" lean-forward="false" selection-start-line="152" selection-start-column="160" selection-end-line="152" selection-end-column="160" />
+        <state relative-caret-position="197">
+          <caret line="75" column="51" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
           <folding />
         </state>
       </provider>
